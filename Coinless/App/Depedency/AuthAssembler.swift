@@ -11,6 +11,9 @@ protocol AuthAssembler {
   func resolve() -> AuthNavigator
   func resolve() -> LoginViewController
   func resolve() -> RegisterViewController
+  func resolve() -> AuthViewModel
+  func resolve() -> AuthUseCase
+  func resolve() -> AuthRepository
 }
 
 extension AuthAssembler where Self: Assembler {
@@ -19,13 +22,24 @@ extension AuthAssembler where Self: Assembler {
   }
   
   func resolve() -> LoginViewController {
-    LoginViewController(navigator: resolve())
+    LoginViewController(navigator: resolve(), viewModel: resolve())
   }
   
   func resolve() -> RegisterViewController {
-    RegisterViewController(navigator: resolve())
+    RegisterViewController(navigator: resolve(), viewModel: resolve())
   }
   
+  func resolve() -> AuthViewModel {
+    AuthViewModel(authUseCase: resolve())
+  }
+  
+  func resolve() -> AuthUseCase {
+    ShowUser(repository: resolve() )
+  }
+  
+  func resolve() -> AuthRepository {
+    DefaultAuthRepository(remoteDataSource: resolve())
+  }
   
   
 }

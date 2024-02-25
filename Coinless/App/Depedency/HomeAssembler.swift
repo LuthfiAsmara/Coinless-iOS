@@ -28,7 +28,7 @@ extension HomeAssembler where Self: Assembler {
   }
   
   func resolve() -> HomeViewModel {
-    HomeViewModel(transactionUseCase: resolve())
+    HomeViewModel(transactionUseCase: resolve(), authUseCase: resolve(), profileUseCase: resolve())
   }
   
   func resolve() -> DetailTransactionViewController {

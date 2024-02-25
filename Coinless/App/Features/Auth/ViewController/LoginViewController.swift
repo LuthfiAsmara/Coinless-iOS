@@ -10,23 +10,16 @@ import RxSwift
 import RxCocoa
 
 class LoginViewController: HostingViewController<LoginView> {
-  
+  private var viewModel: AuthViewModel
   private let disposeBag = DisposeBag()
-  
   private var state = LoginView.ViewState()
   
-  var isAuthorized = true
-  
-  var profile: Profile? {
-    didSet {
-      configureViews(contentView: contentView)
-    }
-  }
   
   private let navigator: AuthNavigator
   
-  init(navigator: AuthNavigator) {
+  init(navigator: AuthNavigator, viewModel: AuthViewModel) {
     self.navigator = navigator
+    self.viewModel = viewModel
     super.init(nibName: nil, bundle: nil)
   }
   
@@ -44,7 +37,7 @@ class LoginViewController: HostingViewController<LoginView> {
     
     view.onClickLogin = { [weak self] in
       guard let self else { return }
-      navigator.navigateToHome(from: self)
+      self.viewModel.login(param: .init(email: state.emailValue, password: state.passwordValue))
     }
     
     return view
@@ -52,16 +45,36 @@ class LoginViewController: HostingViewController<LoginView> {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    configureViews(contentView: contentView)    
+    mapNavigation()
+    configureViews(contentView: contentView)
+    observeValues()
+    
+  }
+  
+  private func observeValues() {
+    let defaults = UserDefaults.standard
+    
+    viewModel.resultLogin.subscribe(onNext: { [weak self] state in
+      guard let self = self else { return }
+      switch state {
+      case .success(let data):
+        defaults.set(data.token, forKey: "bearerToken")
+        print(data.token!)
+        print(data.name!)
+        self.navigator.navigateToHome(from: self)
+      default:
+        break
+      }
+    }).disposed(by: disposeBag)
   }
   
   private func mapNavigation() {
+    let defaults = UserDefaults.standard
+    let bearerToken = defaults.string(forKey: "bearerToken") ?? ""
     delay(bySeconds: 0.8) { [weak self] in
       guard let self = self else { return }
       
-      if !isAuthorized {
-        
-      } else {
+      if !bearerToken.isEmpty {
         navigator.navigateToHome(from: view.window)
       }
     }
