@@ -11,6 +11,7 @@ struct RegisterView: View {
   @ObservedObject var state: ViewState
   
   var onNavigateToLogIn: (() -> Void)?
+  var onClickSignUp: (() -> Void)?
 
     var body: some View {
       ZStack {
@@ -21,11 +22,11 @@ struct RegisterView: View {
             .resizable()
             .scaledToFit()
             .frame(width: 150)
-            .padding(.top, 100)
+            .padding(.top, 70)
           
           BoldText(AppString.titleRegister.localized, size: 16)
             .foregroundColor(.black)
-            .padding(.top, 50)
+            .padding(.top, 30)
           
           RegulerText(AppString.messageRegister.localized, size: 14)
             .foregroundColor(.black)
@@ -53,6 +54,10 @@ struct RegisterView: View {
           }
           .padding(.top, 20)
           
+          FormView(title: "Nama", formValue: $state.nameValue)
+            .padding(.top, 20)
+            .padding(.horizontal, 35)
+          
           FormView(title: "Email", formValue: $state.emailValue)
             .padding(.top, 20)
             .padding(.horizontal, 35)
@@ -66,7 +71,7 @@ struct RegisterView: View {
             .padding(.horizontal, 35)
           
           ContainedButton(title: AppString.titleRegister.localized, type: .primary) {
-            
+            onClickSignUp?()
           }
           .padding(.top, 20)
           .padding(.horizontal, 35)
@@ -92,6 +97,7 @@ struct RegisterView: View {
 
 extension RegisterView {
   class ViewState: ObservableObject {
+    @Published var nameValue: String = ""
     @Published var emailValue: String = ""
     @Published var passwordValue: String = ""
     @Published var confirmPasswordValue: String = ""

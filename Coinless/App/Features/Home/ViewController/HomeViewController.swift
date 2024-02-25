@@ -35,7 +35,7 @@ class HomeViewController: HostingViewController<HomeView> {
     
     view.onClickLogout = { [weak self] in
       guard let self = self else { return }
-      navigator.navigateToLogin(from: self)
+      self.viewModel.logout()
     }
     
     view.onClickDetailTransaction = { [weak self] transactionId in
@@ -50,12 +50,43 @@ class HomeViewController: HostingViewController<HomeView> {
     super.viewDidLoad()
     configureViews(contentView: contentView)
     viewModel.getAllTransaction()
+    viewModel.getProfile()
     observeValues()
   }
   
   private func observeValues() {
-    viewModel.allTransaction.subscribe(onNext: { [weak self] result in
-      self?.state.allTransaction = result
+    viewModel.resultTransaction.subscribe(onNext: { [weak self] state in
+      guard let self = self else { return }
+      switch state {
+      case .success(let data):
+        self.state.allTransaction = data
+      default:
+        break
+      }
     }).disposed(by: disposeBag)
+    
+    viewModel.resultLogout.subscribe(onNext: { [weak self] state in
+      guard let self = self else { return }
+      switch state {
+      case .success(let msg):
+        print(msg)
+        self.navigator.navigateToLogin(from: self)
+        UserDefaults.standard.removeObject(forKey: "bearerToken")
+      default:
+        break
+      }
+    }).disposed(by: disposeBag)
+    
+    viewModel.resultProfile.subscribe(onNext: { [weak self] state in
+      guard let self = self else { return }
+      switch state {
+      case .success(let data):
+        self.state.username = data.name ?? ""
+        self.state.balance = data.balance ?? ""
+      default:
+        break
+      }
+    }).disposed(by: disposeBag)
+    
   }
 }

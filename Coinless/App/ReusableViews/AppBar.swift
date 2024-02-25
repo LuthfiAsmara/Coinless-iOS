@@ -38,6 +38,7 @@ struct AppBar: View {
         
         Spacer()
       }
+      .padding(.top, 50)
     }
 }
 

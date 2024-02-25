@@ -10,8 +10,8 @@ import Moya
 
 
 enum CoinlessAPI {
-  case login
-  case register
+  case login(param: LoginParameter)
+  case register(param: RegisterParameter)
   case logout
   case profile
   case allTransaction
@@ -55,10 +55,10 @@ extension CoinlessAPI: TargetType {
     switch self {
     case .profile:
       return .requestParameters(parameters: [:], encoding: URLEncoding.queryString)
-    case .login:
-      return .requestParameters(parameters: [:], encoding: URLEncoding.queryString)
-    case .register:
-      return .requestParameters(parameters: [:], encoding: URLEncoding.queryString)
+    case .login(let loginParameter):
+      return .requestParameters(parameters: loginParameter.parameters, encoding: URLEncoding.queryString)
+    case .register(let registerParameter):
+      return .requestParameters(parameters: registerParameter.parameters, encoding: URLEncoding.queryString)
     case .logout:
       return .requestParameters(parameters: [:], encoding: URLEncoding.queryString)
     case .allTransaction:
@@ -71,6 +71,8 @@ extension CoinlessAPI: TargetType {
   
   var headers: [String: String]? {
     switch self {
+    case .login, .register:
+      return getHeaders(type: .unAuthorized)
     case .profile:
       return getHeaders(type: .authorized)
     default:
@@ -84,6 +86,7 @@ extension CoinlessAPI: TargetType {
 
 private enum HeaderType {
   case authorized
+  case unAuthorized
 }
 
 extension CoinlessAPI {
@@ -102,11 +105,14 @@ extension CoinlessAPI {
   }
   
   private func getHeaders(type: HeaderType) -> [String: String] {
+    let defaults = UserDefaults.standard
     var header = ["Accept": "application/json"]
     
     switch type {
     case .authorized:
-      header["Authorization"] = "Bearer \(Constants.token)"
+      header["Authorization"] = "Bearer \(defaults.string(forKey: "bearerToken")!)"
+    case .unAuthorized:
+      return header
     }
     
     return header

@@ -20,7 +20,7 @@ struct DetailTransactionView: View {
             .frame(maxWidth: .infinity, maxHeight: 300)
         
           Spacer()
-        }.edgesIgnoringSafeArea(.all)
+        }
         
         VStack(alignment: .leading , spacing: 0) {
           HStack {
@@ -133,7 +133,7 @@ struct DetailTransactionView: View {
         }
           
       }
-
+      .edgesIgnoringSafeArea(.all)
     }
 }
 

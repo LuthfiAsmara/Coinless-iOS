@@ -48,8 +48,19 @@
 		DE58F6C82B6D8FCB0072933E /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE58F6C72B6D8FCB0072933E /* HostingController.swift */; };
 		DE58F6CA2B6D904A0072933E /* UIHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE58F6C92B6D904A0072933E /* UIHostingController.swift */; };
 		DE9681322B8B7786006BBEBB /* AppBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9681312B8B7786006BBEBB /* AppBar.swift */; };
+		DE9681342B8B7FED006BBEBB /* ShimmerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9681332B8B7FED006BBEBB /* ShimmerView.swift */; };
+		DE9681392B8B8871006BBEBB /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9681382B8B8871006BBEBB /* AuthViewModel.swift */; };
+		DE96813B2B8B895A006BBEBB /* AuthUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE96813A2B8B895A006BBEBB /* AuthUseCase.swift */; };
+		DE96813D2B8B89D5006BBEBB /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE96813C2B8B89D5006BBEBB /* AuthRepository.swift */; };
+		DE96813F2B8B8A32006BBEBB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE96813E2B8B8A32006BBEBB /* User.swift */; };
+		DE9681412B8B8ABB006BBEBB /* DefaultAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9681402B8B8ABB006BBEBB /* DefaultAuthRepository.swift */; };
+		DE9681432B8B8B19006BBEBB /* LoginParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9681422B8B8B19006BBEBB /* LoginParameter.swift */; };
+		DE9681452B8B8E0F006BBEBB /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9681442B8B8E0F006BBEBB /* UserResponse.swift */; };
+		DE96814C2B8B9FD3006BBEBB /* LogoutMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE96814B2B8B9FD3006BBEBB /* LogoutMessage.swift */; };
+		DE96814E2B8B9FFF006BBEBB /* LogoutResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE96814D2B8B9FFF006BBEBB /* LogoutResponse.swift */; };
+		DE9681512B8BA560006BBEBB /* RegisterParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9681502B8BA560006BBEBB /* RegisterParameter.swift */; };
+		DE9681532B8BB1D5006BBEBB /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9681522B8BB1D5006BBEBB /* String+Extension.swift */; };
 		DEB2000E2B85A9D300DA9321 /* DetailTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2000D2B85A9D300DA9321 /* DetailTransactionView.swift */; };
-		DEB200102B85AE0900DA9321 /* DateToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2000F2B85AE0900DA9321 /* DateToString.swift */; };
 		DEB200122B85B22300DA9321 /* DetailTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB200112B85B22300DA9321 /* DetailTransactionViewController.swift */; };
 		DEB200142B85B41E00DA9321 /* DetailTransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB200132B85B41E00DA9321 /* DetailTransactionViewModel.swift */; };
 		DEB200162B85BFFE00DA9321 /* BaseResponseArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB200152B85BFFE00DA9321 /* BaseResponseArray.swift */; };
@@ -119,8 +130,19 @@
 		DE58F6C72B6D8FCB0072933E /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
 		DE58F6C92B6D904A0072933E /* UIHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHostingController.swift; sourceTree = "<group>"; };
 		DE9681312B8B7786006BBEBB /* AppBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBar.swift; sourceTree = "<group>"; };
+		DE9681332B8B7FED006BBEBB /* ShimmerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerView.swift; sourceTree = "<group>"; };
+		DE9681382B8B8871006BBEBB /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		DE96813A2B8B895A006BBEBB /* AuthUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUseCase.swift; sourceTree = "<group>"; };
+		DE96813C2B8B89D5006BBEBB /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
+		DE96813E2B8B8A32006BBEBB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DE9681402B8B8ABB006BBEBB /* DefaultAuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAuthRepository.swift; sourceTree = "<group>"; };
+		DE9681422B8B8B19006BBEBB /* LoginParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginParameter.swift; sourceTree = "<group>"; };
+		DE9681442B8B8E0F006BBEBB /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
+		DE96814B2B8B9FD3006BBEBB /* LogoutMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutMessage.swift; sourceTree = "<group>"; };
+		DE96814D2B8B9FFF006BBEBB /* LogoutResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutResponse.swift; sourceTree = "<group>"; };
+		DE9681502B8BA560006BBEBB /* RegisterParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterParameter.swift; sourceTree = "<group>"; };
+		DE9681522B8BB1D5006BBEBB /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		DEB2000D2B85A9D300DA9321 /* DetailTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTransactionView.swift; sourceTree = "<group>"; };
-		DEB2000F2B85AE0900DA9321 /* DateToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateToString.swift; sourceTree = "<group>"; };
 		DEB200112B85B22300DA9321 /* DetailTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTransactionViewController.swift; sourceTree = "<group>"; };
 		DEB200132B85B41E00DA9321 /* DetailTransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTransactionViewModel.swift; sourceTree = "<group>"; };
 		DEB200152B85BFFE00DA9321 /* BaseResponseArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponseArray.swift; sourceTree = "<group>"; };
@@ -189,12 +211,14 @@
 		DE20CDB32B79BE0F0073FD01 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DE4925662B7FEEF0007F0C59 /* Parameters */,
+				DE96814F2B8BA54F006BBEBB /* Parameters */,
 				DE20CDB42B79BE1D0073FD01 /* Profile.swift */,
 				DE49255D2B7FE973007F0C59 /* StatusType.swift */,
 				DE49255F2B7FE9A3007F0C59 /* TransactionType.swift */,
 				DE4925712B7FF253007F0C59 /* ApiError.swift */,
 				DE57665E2B84DDBC00DD0FD6 /* Transaction.swift */,
+				DE96813E2B8B8A32006BBEBB /* User.swift */,
+				DE96814B2B8B9FD3006BBEBB /* LogoutMessage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -204,6 +228,7 @@
 			children = (
 				DE20CDB72B79BE980073FD01 /* ProfileRepository.swift */,
 				DE57665C2B84DD9300DD0FD6 /* TransactionRepository.swift */,
+				DE96813C2B8B89D5006BBEBB /* AuthRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -223,13 +248,6 @@
 				DE49256F2B7FF208007F0C59 /* APIError.swift */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		DE4925662B7FEEF0007F0C59 /* Parameters */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Parameters;
 			sourceTree = "<group>";
 		};
 		DE4925692B7FF109007F0C59 /* DataSources */ = {
@@ -255,6 +273,8 @@
 				DE5766582B84DC4700DD0FD6 /* BaseResponse.swift */,
 				DE57665A2B84DD0700DD0FD6 /* TransactionResponse.swift */,
 				DEB200152B85BFFE00DA9321 /* BaseResponseArray.swift */,
+				DE9681442B8B8E0F006BBEBB /* UserResponse.swift */,
+				DE96814D2B8B9FFF006BBEBB /* LogoutResponse.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -264,6 +284,7 @@
 			children = (
 				DE4925772B7FF5EF007F0C59 /* DefaultProfileRepository.swift */,
 				DE5766622B84E3F600DD0FD6 /* DefaultTransactionRepository.swift */,
+				DE9681402B8B8ABB006BBEBB /* DefaultAuthRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -299,6 +320,7 @@
 			children = (
 				DE4925812B7FF9F3007F0C59 /* ProfileUseCase.swift */,
 				DE5766602B84E06E00DD0FD6 /* TransactionUseCase.swift */,
+				DE96813A2B8B895A006BBEBB /* AuthUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -306,6 +328,7 @@
 		DE57663F2B84769900DD0FD6 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				DE9681372B8B8865006BBEBB /* ViewModel */,
 				DE57664F2B84AB0C00DD0FD6 /* Navigator */,
 				DE5766402B8476A400DD0FD6 /* ViewController */,
 			);
@@ -339,13 +362,38 @@
 			path = Navigator;
 			sourceTree = "<group>";
 		};
+		DE9681372B8B8865006BBEBB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DE9681382B8B8871006BBEBB /* AuthViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DE9681462B8B8EFA006BBEBB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DEB200132B85B41E00DA9321 /* DetailTransactionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DE96814F2B8BA54F006BBEBB /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				DE9681422B8B8B19006BBEBB /* LoginParameter.swift */,
+				DE9681502B8BA560006BBEBB /* RegisterParameter.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
 		DEB2000C2B85A9A900DA9321 /* DetailTransaction */ = {
 			isa = PBXGroup;
 			children = (
+				DE9681462B8B8EFA006BBEBB /* ViewModel */,
 				DE0A8C762B85E3CC00E73591 /* Navigator */,
 				DEB2000D2B85A9D300DA9321 /* DetailTransactionView.swift */,
 				DEB200112B85B22300DA9321 /* DetailTransactionViewController.swift */,
-				DEB200132B85B41E00DA9321 /* DetailTransactionViewModel.swift */,
 			);
 			path = DetailTransaction;
 			sourceTree = "<group>";
@@ -459,7 +507,6 @@
 				DE58BE4F2B803DF000440638 /* Encodable+Param.swift */,
 				DE5766492B847C3700DD0FD6 /* AppString.swift */,
 				DE5766562B84C3B400DD0FD6 /* Delay.swift */,
-				DEB2000F2B85AE0900DA9321 /* DateToString.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -490,6 +537,7 @@
 				DE58F6C92B6D904A0072933E /* UIHostingController.swift */,
 				DEBC1AA82B776DB3006382D0 /* Color+Extension.swift */,
 				DEBC1AAE2B7773EC006382D0 /* Font+Extension.swift */,
+				DE9681522B8BB1D5006BBEBB /* String+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -502,6 +550,7 @@
 				DE57664B2B849AB000DD0FD6 /* FormView.swift */,
 				DE57664D2B84A1DF00DD0FD6 /* ContainedButton.swift */,
 				DE9681312B8B7786006BBEBB /* AppBar.swift */,
+				DE9681332B8B7FED006BBEBB /* ShimmerView.swift */,
 			);
 			path = ReusableViews;
 			sourceTree = "<group>";
@@ -680,6 +729,7 @@
 			files = (
 				DEBC1AC82B77C56B006382D0 /* HomeViewModel.swift in Sources */,
 				DE20CDB52B79BE1D0073FD01 /* Profile.swift in Sources */,
+				DE9681452B8B8E0F006BBEBB /* UserResponse.swift in Sources */,
 				DEBC1AAB2B777224006382D0 /* IconMenuView.swift in Sources */,
 				DE5766482B8478F900DD0FD6 /* AuthNavigator.swift in Sources */,
 				DEF27A4F2B66CC6B00D9B0CD /* AppDelegate.swift in Sources */,
@@ -689,7 +739,9 @@
 				DEB200162B85BFFE00DA9321 /* BaseResponseArray.swift in Sources */,
 				DE4925822B7FF9F3007F0C59 /* ProfileUseCase.swift in Sources */,
 				DE57665B2B84DD0700DD0FD6 /* TransactionResponse.swift in Sources */,
+				DE9681512B8BA560006BBEBB /* RegisterParameter.swift in Sources */,
 				DE4925622B7FEBD8007F0C59 /* Const.swift in Sources */,
+				DE9681342B8B7FED006BBEBB /* ShimmerView.swift in Sources */,
 				DE5766592B84DC4700DD0FD6 /* BaseResponse.swift in Sources */,
 				DE4925882B800284007F0C59 /* ProfileAssembler.swift in Sources */,
 				DE49257C2B7FF8C3007F0C59 /* ProfileViewController.swift in Sources */,
@@ -701,6 +753,7 @@
 				DE5766422B8476B700DD0FD6 /* LoginView.swift in Sources */,
 				DE4925842B7FFAF7007F0C59 /* ProfileView.swift in Sources */,
 				DEF27A5F2B66D34A00D9B0CD /* HomeView.swift in Sources */,
+				DE9681412B8B8ABB006BBEBB /* DefaultAuthRepository.swift in Sources */,
 				DE5766442B84778000DD0FD6 /* LoginViewController.swift in Sources */,
 				DE5766612B84E06E00DD0FD6 /* TransactionUseCase.swift in Sources */,
 				DE5766632B84E3F600DD0FD6 /* DefaultTransactionRepository.swift in Sources */,
@@ -708,9 +761,11 @@
 				DE20CDB82B79BE980073FD01 /* ProfileRepository.swift in Sources */,
 				DEF27A5A2B66D24F00D9B0CD /* HomeNavigator.swift in Sources */,
 				DEB2000E2B85A9D300DA9321 /* DetailTransactionView.swift in Sources */,
+				DE96814E2B8B9FFF006BBEBB /* LogoutResponse.swift in Sources */,
+				DE96813F2B8B8A32006BBEBB /* User.swift in Sources */,
 				DEF27A542B66CDAE00D9B0CD /* AppAssembler.swift in Sources */,
 				DE4925782B7FF5EF007F0C59 /* DefaultProfileRepository.swift in Sources */,
-				DEB200102B85AE0900DA9321 /* DateToString.swift in Sources */,
+				DE96814C2B8B9FD3006BBEBB /* LogoutMessage.swift in Sources */,
 				DEB200142B85B41E00DA9321 /* DetailTransactionViewModel.swift in Sources */,
 				DE58F6CA2B6D904A0072933E /* UIHostingController.swift in Sources */,
 				DE49257F2B7FF8D6007F0C59 /* ProfileViewModel.swift in Sources */,
@@ -718,23 +773,28 @@
 				DEF53D422B8B765C0077C645 /* TabHomeView.swift in Sources */,
 				DE57664A2B847C3700DD0FD6 /* AppString.swift in Sources */,
 				DE57665D2B84DD9300DD0FD6 /* TransactionRepository.swift in Sources */,
+				DE96813B2B8B895A006BBEBB /* AuthUseCase.swift in Sources */,
 				DE58F6C62B6D8C740072933E /* HomeAssembler.swift in Sources */,
 				DE4925722B7FF253007F0C59 /* ApiError.swift in Sources */,
 				DEB200122B85B22300DA9321 /* DetailTransactionViewController.swift in Sources */,
 				DE3D391D2B66DA3F00EB7F20 /* Navigator.swift in Sources */,
+				DE9681392B8B8871006BBEBB /* AuthViewModel.swift in Sources */,
 				DE49255E2B7FE973007F0C59 /* StatusType.swift in Sources */,
 				DE5766522B84AF9100DD0FD6 /* RegisterView.swift in Sources */,
 				DEBC1AC02B779F5F006382D0 /* TransactionStatusView.swift in Sources */,
 				DEBC1AAF2B7773EC006382D0 /* Font+Extension.swift in Sources */,
 				DE5766542B84B5D800DD0FD6 /* RegisterViewController.swift in Sources */,
 				DE49256C2B7FF123007F0C59 /* RemoteDataSource.swift in Sources */,
+				DE9681532B8BB1D5006BBEBB /* String+Extension.swift in Sources */,
 				DE4925702B7FF208007F0C59 /* APIError.swift in Sources */,
 				DE49256E2B7FF179007F0C59 /* NetworkServices.swift in Sources */,
 				DEBC1AAD2B77736C006382D0 /* Text.swift in Sources */,
 				DEBC1ABC2B779DBD006382D0 /* HeroView.swift in Sources */,
+				DE9681432B8B8B19006BBEBB /* LoginParameter.swift in Sources */,
 				DE58BE502B803DF000440638 /* Encodable+Param.swift in Sources */,
 				DE9681322B8B7786006BBEBB /* AppBar.swift in Sources */,
 				DEF27A5D2B66D32C00D9B0CD /* HomeViewController.swift in Sources */,
+				DE96813D2B8B89D5006BBEBB /* AuthRepository.swift in Sources */,
 				DE5766462B84784B00DD0FD6 /* AuthAssembler.swift in Sources */,
 				DE5766572B84C3B400DD0FD6 /* Delay.swift in Sources */,
 			);
