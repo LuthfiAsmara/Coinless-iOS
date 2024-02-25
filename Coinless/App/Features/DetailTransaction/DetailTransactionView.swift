@@ -9,6 +9,7 @@ import SwiftUI
 
 struct DetailTransactionView: View {
   @ObservedObject var state: ViewState
+  var onBackPressed: (() -> Void)?
   
     var body: some View {
       ZStack {
@@ -19,7 +20,7 @@ struct DetailTransactionView: View {
             .frame(maxWidth: .infinity, maxHeight: 300)
         
           Spacer()
-        }
+        }.edgesIgnoringSafeArea(.all)
         
         VStack(alignment: .leading , spacing: 0) {
           HStack {
@@ -126,9 +127,13 @@ struct DetailTransactionView: View {
           .padding(.top, 100)
           .padding(.horizontal, 20)
           .shadow(radius: 2)
+        
+        AppBar(title: "Detail Transaction") {
+          onBackPressed?()
+        }
           
       }
-      .edgesIgnoringSafeArea(.all)
+
     }
 }
 
