@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  Coinless
+
+  Created by Luthfi Asmara on 29/01/24.
+  
+*/
+
+// MARK: -- Login Screen
+
+"title_login" = "Log in";
+"message_login" = "Masukkan email dan password yang sesuai.";
+"title_register" = "Sign Up";
+"message_register" = "Daftar secara gratis dan jadilah pengguna Coinless";
+
