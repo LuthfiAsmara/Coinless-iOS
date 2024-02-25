@@ -74,7 +74,7 @@ struct HomeView: View {
             Button{
               onClickLogout?()
             }label: {
-              Image(.icLogout)
+              Image(systemName: "rectangle.portrait.and.arrow.right")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 24)
@@ -83,7 +83,7 @@ struct HomeView: View {
           }
           .padding(.top, 60)
           
-          BoldText("Luthfi Asmara", size: 18)
+          BoldText(state.username, size: 18)
             .foregroundColor(.white)
             .padding(.top, 30)
           
@@ -91,7 +91,7 @@ struct HomeView: View {
             RegulerText("Rp", size: 14)
               .foregroundColor(.white)
             
-            RegulerText("200,000.00", size: 16)
+            RegulerText(state.balance.amountInRupiah(), size: 16)
               .padding(.top, 7)
               .foregroundColor(.white)
           }
@@ -138,6 +138,8 @@ struct HomeView: View {
 extension HomeView {
   class ViewState: ObservableObject {
     @Published var allTransaction: [Transaction] = []
+    @Published var username: String = ""
+    @Published var balance: String = "0"
   }
 }
 
