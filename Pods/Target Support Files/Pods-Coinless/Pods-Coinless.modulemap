@@ -1,0 +1,6 @@
+framework module Pods_Coinless {
+  umbrella header "Pods-Coinless-umbrella.h"
+
+  export *
+  module * { export * }
+}
