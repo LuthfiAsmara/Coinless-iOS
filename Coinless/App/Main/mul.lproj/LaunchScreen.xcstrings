@@ -1,0 +1,18 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "h8Y-JQ-0iI.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"sSs\"; ObjectID = \"h8Y-JQ-0iI\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sSs"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
