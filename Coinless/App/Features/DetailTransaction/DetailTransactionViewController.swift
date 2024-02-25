@@ -28,6 +28,12 @@ class DetailTransactionViewController: HostingViewController<DetailTransactionVi
   
   lazy var contentView: DetailTransactionView = {
     var view = DetailTransactionView(state: state)
+    
+    view.onBackPressed = { [weak self] in
+      guard let self else { return }
+      self.navigationController?.popViewController(animated: true)
+    }
+    
     return view
   }()
   

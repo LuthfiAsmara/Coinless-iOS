@@ -47,6 +47,7 @@
 		DE58F6C62B6D8C740072933E /* HomeAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE58F6C52B6D8C740072933E /* HomeAssembler.swift */; };
 		DE58F6C82B6D8FCB0072933E /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE58F6C72B6D8FCB0072933E /* HostingController.swift */; };
 		DE58F6CA2B6D904A0072933E /* UIHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE58F6C92B6D904A0072933E /* UIHostingController.swift */; };
+		DE9681322B8B7786006BBEBB /* AppBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9681312B8B7786006BBEBB /* AppBar.swift */; };
 		DEB2000E2B85A9D300DA9321 /* DetailTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2000D2B85A9D300DA9321 /* DetailTransactionView.swift */; };
 		DEB200102B85AE0900DA9321 /* DateToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2000F2B85AE0900DA9321 /* DateToString.swift */; };
 		DEB200122B85B22300DA9321 /* DetailTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB200112B85B22300DA9321 /* DetailTransactionViewController.swift */; };
@@ -117,6 +118,7 @@
 		DE58F6C52B6D8C740072933E /* HomeAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssembler.swift; sourceTree = "<group>"; };
 		DE58F6C72B6D8FCB0072933E /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
 		DE58F6C92B6D904A0072933E /* UIHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHostingController.swift; sourceTree = "<group>"; };
+		DE9681312B8B7786006BBEBB /* AppBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBar.swift; sourceTree = "<group>"; };
 		DEB2000D2B85A9D300DA9321 /* DetailTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTransactionView.swift; sourceTree = "<group>"; };
 		DEB2000F2B85AE0900DA9321 /* DateToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateToString.swift; sourceTree = "<group>"; };
 		DEB200112B85B22300DA9321 /* DetailTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTransactionViewController.swift; sourceTree = "<group>"; };
@@ -499,6 +501,7 @@
 				DEBC1AAC2B77736C006382D0 /* Text.swift */,
 				DE57664B2B849AB000DD0FD6 /* FormView.swift */,
 				DE57664D2B84A1DF00DD0FD6 /* ContainedButton.swift */,
+				DE9681312B8B7786006BBEBB /* AppBar.swift */,
 			);
 			path = ReusableViews;
 			sourceTree = "<group>";
@@ -730,6 +733,7 @@
 				DEBC1AAD2B77736C006382D0 /* Text.swift in Sources */,
 				DEBC1ABC2B779DBD006382D0 /* HeroView.swift in Sources */,
 				DE58BE502B803DF000440638 /* Encodable+Param.swift in Sources */,
+				DE9681322B8B7786006BBEBB /* AppBar.swift in Sources */,
 				DEF27A5D2B66D32C00D9B0CD /* HomeViewController.swift in Sources */,
 				DE5766462B84784B00DD0FD6 /* AuthAssembler.swift in Sources */,
 				DE5766572B84C3B400DD0FD6 /* Delay.swift in Sources */,
