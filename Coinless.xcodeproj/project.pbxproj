@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6AD2D1F499B0660B0FBAE8E7 /* Pods_Coinless.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DA7B6874A5E5304A8ADFF5 /* Pods_Coinless.framework */; };
+		3DD406577C1E4B3C73529963 /* Pods_Coinless.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E757A19CEDC0CD0CA0425C23 /* Pods_Coinless.framework */; };
 		DE20CDB52B79BE1D0073FD01 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE20CDB42B79BE1D0073FD01 /* Profile.swift */; };
 		DE20CDB82B79BE980073FD01 /* ProfileRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE20CDB72B79BE980073FD01 /* ProfileRepository.swift */; };
 		DE3D391D2B66DA3F00EB7F20 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D391C2B66DA3F00EB7F20 /* Navigator.swift */; };
@@ -88,11 +88,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1AE614485B77CCE0B90420F7 /* Pods-Coinless.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coinless.debug.xcconfig"; path = "Target Support Files/Pods-Coinless/Pods-Coinless.debug.xcconfig"; sourceTree = "<group>"; };
-		9FBC03AC8056914A84BB94BD /* Pods-Coinless.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coinless.release.xcconfig"; path = "Target Support Files/Pods-Coinless/Pods-Coinless.release.xcconfig"; sourceTree = "<group>"; };
+		3A19AF703352197FEB1C265F /* Pods-Coinless.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coinless.debug.xcconfig"; path = "Target Support Files/Pods-Coinless/Pods-Coinless.debug.xcconfig"; sourceTree = "<group>"; };
+		888F1F1DD55A6A92D343FABB /* Pods-Coinless.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coinless.release.xcconfig"; path = "Target Support Files/Pods-Coinless/Pods-Coinless.release.xcconfig"; sourceTree = "<group>"; };
 		DE20CDB42B79BE1D0073FD01 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		DE20CDB72B79BE980073FD01 /* ProfileRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRepository.swift; sourceTree = "<group>"; };
 		DE3D391C2B66DA3F00EB7F20 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		DE3E3C8C2B8BCF2D009F0621 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		DE49255D2B7FE973007F0C59 /* StatusType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusType.swift; sourceTree = "<group>"; };
 		DE49255F2B7FE9A3007F0C59 /* TransactionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionType.swift; sourceTree = "<group>"; };
 		DE4925612B7FEBD8007F0C59 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
@@ -169,7 +170,7 @@
 		DEF27A5C2B66D32C00D9B0CD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DEF27A5E2B66D34A00D9B0CD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		DEF53D412B8B765C0077C645 /* TabHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabHomeView.swift; path = "../../../../../../../../.Trash/Coinless-iOS 20.17.05/Coinless/App/Features/Home/Views/TabHomeView.swift"; sourceTree = "<group>"; };
-		F6DA7B6874A5E5304A8ADFF5 /* Pods_Coinless.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coinless.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E757A19CEDC0CD0CA0425C23 /* Pods_Coinless.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coinless.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +178,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AD2D1F499B0660B0FBAE8E7 /* Pods_Coinless.framework in Frameworks */,
+				3DD406577C1E4B3C73529963 /* Pods_Coinless.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,18 +188,10 @@
 		7E4D97009381F1A51B3809CF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1AE614485B77CCE0B90420F7 /* Pods-Coinless.debug.xcconfig */,
-				9FBC03AC8056914A84BB94BD /* Pods-Coinless.release.xcconfig */,
+				3A19AF703352197FEB1C265F /* Pods-Coinless.debug.xcconfig */,
+				888F1F1DD55A6A92D343FABB /* Pods-Coinless.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		C31689C2DCED0A8DDF29F910 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F6DA7B6874A5E5304A8ADFF5 /* Pods_Coinless.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		DE0A8C762B85E3CC00E73591 /* Navigator */ = {
@@ -438,10 +431,11 @@
 		DEF27A272B66C49000D9B0CD = {
 			isa = PBXGroup;
 			children = (
+				DE3E3C8C2B8BCF2D009F0621 /* .swiftlint.yml */,
 				DEF27A322B66C49000D9B0CD /* Coinless */,
 				DEF27A312B66C49000D9B0CD /* Products */,
 				7E4D97009381F1A51B3809CF /* Pods */,
-				C31689C2DCED0A8DDF29F910 /* Frameworks */,
+				E6E8319950035FB000FE5BDE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -608,6 +602,14 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		E6E8319950035FB000FE5BDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E757A19CEDC0CD0CA0425C23 /* Pods_Coinless.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -615,11 +617,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DEF27A3E2B66C49100D9B0CD /* Build configuration list for PBXNativeTarget "Coinless" */;
 			buildPhases = (
-				0F38C4AA1A440EFAF5187797 /* [CP] Check Pods Manifest.lock */,
+				924EF9D3F44EDCAE9D9C8EB8 /* [CP] Check Pods Manifest.lock */,
 				DEF27A2C2B66C49000D9B0CD /* Sources */,
 				DEF27A2D2B66C49000D9B0CD /* Frameworks */,
 				DEF27A2E2B66C49000D9B0CD /* Resources */,
-				1B67DA9F934E30A84E432894 /* [CP] Embed Pods Frameworks */,
+				09B022C946963B07A6E6D662 /* [CP] Embed Pods Frameworks */,
+				DE2CE3EF2B8BD41800E8FB1D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -681,7 +684,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0F38C4AA1A440EFAF5187797 /* [CP] Check Pods Manifest.lock */ = {
+		09B022C946963B07A6E6D662 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Coinless/Pods-Coinless-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Coinless/Pods-Coinless-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Coinless/Pods-Coinless-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		924EF9D3F44EDCAE9D9C8EB8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -703,22 +723,22 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1B67DA9F934E30A84E432894 /* [CP] Embed Pods Frameworks */ = {
+		DE2CE3EF2B8BD41800E8FB1D /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Coinless/Pods-Coinless-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+			);
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Coinless/Pods-Coinless-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Coinless/Pods-Coinless-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -937,7 +957,7 @@
 		};
 		DEF27A3F2B66C49100D9B0CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1AE614485B77CCE0B90420F7 /* Pods-Coinless.debug.xcconfig */;
+			baseConfigurationReference = 3A19AF703352197FEB1C265F /* Pods-Coinless.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -972,7 +992,7 @@
 		};
 		DEF27A402B66C49100D9B0CD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9FBC03AC8056914A84BB94BD /* Pods-Coinless.release.xcconfig */;
+			baseConfigurationReference = 888F1F1DD55A6A92D343FABB /* Pods-Coinless.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
