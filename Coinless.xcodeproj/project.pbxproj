@@ -72,7 +72,7 @@
 		DEF27A5A2B66D24F00D9B0CD /* HomeNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF27A592B66D24F00D9B0CD /* HomeNavigator.swift */; };
 		DEF27A5D2B66D32C00D9B0CD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF27A5C2B66D32C00D9B0CD /* HomeViewController.swift */; };
 		DEF27A5F2B66D34A00D9B0CD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF27A5E2B66D34A00D9B0CD /* HomeView.swift */; };
-		DEFE24892B8A0A46002A494B /* TabHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE24882B8A0A46002A494B /* TabHomeView.swift */; };
+		DEF53D422B8B765C0077C645 /* TabHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF53D412B8B765C0077C645 /* TabHomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -144,7 +144,7 @@
 		DEF27A592B66D24F00D9B0CD /* HomeNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigator.swift; sourceTree = "<group>"; };
 		DEF27A5C2B66D32C00D9B0CD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DEF27A5E2B66D34A00D9B0CD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		DEFE24882B8A0A46002A494B /* TabHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabHomeView.swift; path = "../../../../../../../../.Trash/Coinless-iOS/Coinless/Domain/Model/TabHomeView.swift"; sourceTree = "<group>"; };
+		DEF53D412B8B765C0077C645 /* TabHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabHomeView.swift; path = "../../../../../../../../.Trash/Coinless-iOS 20.17.05/Coinless/App/Features/Home/Views/TabHomeView.swift"; sourceTree = "<group>"; };
 		F6DA7B6874A5E5304A8ADFF5 /* Pods_Coinless.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coinless.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -364,7 +364,7 @@
 				DEBC1ABB2B779DBD006382D0 /* HeroView.swift */,
 				DEBC1ABD2B779DDD006382D0 /* TransactionView.swift */,
 				DEBC1ABF2B779F5F006382D0 /* TransactionStatusView.swift */,
-				DEFE24882B8A0A46002A494B /* TabHomeView.swift */,
+				DEF53D412B8B765C0077C645 /* TabHomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -712,7 +712,7 @@
 				DE58F6CA2B6D904A0072933E /* UIHostingController.swift in Sources */,
 				DE49257F2B7FF8D6007F0C59 /* ProfileViewModel.swift in Sources */,
 				DE4925862B7FFF17007F0C59 /* DataState.swift in Sources */,
-				DEFE24892B8A0A46002A494B /* TabHomeView.swift in Sources */,
+				DEF53D422B8B765C0077C645 /* TabHomeView.swift in Sources */,
 				DE57664A2B847C3700DD0FD6 /* AppString.swift in Sources */,
 				DE57665D2B84DD9300DD0FD6 /* TransactionRepository.swift in Sources */,
 				DE58F6C62B6D8C740072933E /* HomeAssembler.swift in Sources */,
