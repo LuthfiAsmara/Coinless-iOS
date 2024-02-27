@@ -7,8 +7,6 @@ def general_pod
   pod 'Alamofire'
   pod 'ObjectMapper'
   pod 'Moya'
-  pod 'RealmSwift'
-  pod 'SwiftLint'
   
 end
 
